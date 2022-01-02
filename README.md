@@ -1,5 +1,26 @@
 # PTPMPT20211-12
-Repo bài tập lớn môn phát triển phần mềm phân tán
+Repo bài tập lớn môn phát triển phần mềm phân tán. 
+Hệ thống bán sản phầm giày.
+
+Các chức năng: 
+- Đăng nhập/Đăng ký tài khoản
+- Kiểm soát thông tin cá nhân
+- Xem sản phẩm tổng quan
+- Filter, search theo sản phẩm, tag, nhóm, công ty 
+- Mua, kiểm soát thông tin đơn hảng
+Các công nghệ sử dụng:
+- React JS
+- NodeJS Express JS
+- Redis caching
+- MongoDB
+- Docker
+
+Thành phần chính trong ứng dụng:
+- service app: FrontEnd: ReactJS, Backend: ExpressJS
+- service db: MongoDB
+- service redis: Redis làm nơi lưu trữ dữ liệu và xử lý dữ liệu realtime, chia các sentinel redis để phục vụ việc phân tán dữ liệu, chia tải và tăng độ tin cậy
+
+Hệ thống có đầy đủ chức năng đăng nhâp, đăng xuất, truy suất, đọc dữ liệu từ các đơn hàng và xử lý thông tin, kiểm soát quyền. 
 
 ## Hướng dẫn setup docker theo docker file
 ### Cấu trúc project:
