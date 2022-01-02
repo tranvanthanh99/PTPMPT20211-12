@@ -1,24 +1,45 @@
-import React, { useEffect, useState } from "react";
-import { AppBar, List } from "@material-ui/core";
-import PropTypes from "prop-types";
-import navbarStyles from "./navbar.style";
-import CustomTypography from "../Typography/typography";
-import CustomInput from "../Input/Input";
+import React, { useEffect, useState } from 'react';
+import { AppBar, List } from '@material-ui/core';
+import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
+import navbarStyles from './navbar.style';
+import CustomTypography from '../Typography/typography';
+import CustomInput from '../Input/Input';
 
-const navLinkHome = { title: "Home", path: "/" };
-
-const navLinks = [
-  { title: "News", path: "/news" },
-  { title: "About", path: "/about/how-it-works" },
-  { title: "Help", path: "/faq" },
-  { title: "Login", path: "/login" },
-  { title: "Sign up", path: "/signup" },
-];
+const navLinkHome = {
+  title: 'Home',
+  path: '/',
+};
 
 const Navbar = (props) =>
 {
   const classes = navbarStyles();
   const { isMainPage } = props;
+
+  const userState = useSelector((state) => state.userState);
+
+  const navLinks = [
+    {
+      title: 'About',
+      path: '/about',
+    },
+    {
+      title: 'Sneaker',
+      path: '/brand/sneakers',
+    },
+    {
+      title: '404',
+      path: '/404',
+    },
+    {
+      title: `${!userState.isLogin ? 'Login' : 'Logout'}`,
+      path: `${!userState.isLogin ? '/login' : '/logout'}`,
+    },
+    {
+      title: `${!userState.isLogin ? 'Sign Up' : 'Account'}`,
+      path: '/account',
+    },
+  ];
 
   const [scrolling, setScrolling] = useState(false);
 
@@ -36,12 +57,12 @@ const Navbar = (props) =>
 
   useEffect(() =>
   {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
   });
 
   return (
     <AppBar
-      position={isMainPage ? "fixed" : "sticky"}
+      position={isMainPage ? 'fixed' : 'sticky'}
       className={`${(scrolling || !isMainPage) && classes.visible} ${
         classes.navBg
       }`}
@@ -57,7 +78,20 @@ const Navbar = (props) =>
           fontSize="20px"
           txtType="text--bold"
         >
-          ProjectX
+          <span
+            className={`${classes.logoName} ${
+              !isMainPage && classes.marginNone
+            }`}
+          >
+            Project
+            <span
+              className={`${(scrolling || !isMainPage) && classes.colorX} ${
+                classes.sizeX
+              }`}
+            >
+              X
+            </span>
+          </span>
         </CustomTypography>
       </span>
       <List
@@ -66,7 +100,11 @@ const Navbar = (props) =>
         className={classes.navDisplayFlex}
       >
         {!isMainPage && <CustomInput placeholder="Search..." variant="icon" />}
-        {navLinks.map(({ title, path }, i) => (
+        {navLinks.map(({
+          title,
+          path,
+        }, i) => (
+          // TODO Fix not re-render when press Account button
           <CustomTypography
             href={path}
             key={title}

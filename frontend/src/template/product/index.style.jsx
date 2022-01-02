@@ -21,28 +21,9 @@ const productStyle = makeStyles((theme) => ({
 
   },
 
-  shadow: {
-    height: '20px',
-    background: 'linear-gradient(#e5e5e5,#f5f5f5,#fff,#fff)',
-    backgroundColor: '#fff',
-
-    '& @media (max-width:767px)': {
-      background: '0 0',
-      height: '0',
-    },
-  },
-
   page_container: {
     position: 'relative',
     minHeight: '100vh',
-
-    '@media (min-width: 768px)': {
-      paddingTop: '91px',
-    },
-
-    '@media (max-width: 767px)': {
-      paddingTop: '44px',
-    },
   },
 
   routes_breadcrumbs_container: {
@@ -89,6 +70,14 @@ const productStyle = makeStyles((theme) => ({
     fontWeight: '700',
     padding: '0 10px',
     margin: '0',
+  },
+
+  center: {
+    width: "100vw",
+    height: "100vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
   },
 }));
 

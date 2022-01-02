@@ -5,7 +5,6 @@ import Tab from '@material-ui/core/Tab';
 import relatedProductStyle from './related_product.style';
 import CustomTypography from '../../../components/Typography/typography';
 import CustomCard from '../../../container/card/card';
-import { makeKey } from '../../../utils/supportFunction';
 
 function a11yProps(index)
 {
@@ -52,13 +51,33 @@ const RelatedProduct = ({ relatedProductList }) =>
         scrollButtons="auto"
         aria-label="scrollable auto tabs example"
       >
-        {relatedProductList.map((product, index) => (
-          <Tab
-            key={makeKey(5)}
-            component={() => <CustomCard data={product} minWidth="215px" />}
-            {...a11yProps(index)}
-          />
-        ))}
+        {relatedProductList.map((product, index) =>
+        {
+          // React.forwardRef to handle warning
+          const ProductCard = React.forwardRef((props, ref) => (
+            <CustomCard
+              data={product}
+              classes={{ root: classes.card }}
+              innerRef={ref}
+              {...props}
+            />
+          ));
+
+          const CustomTab = React.forwardRef((props, ref) => (
+            <Tab
+              component={ProductCard}
+              {...a11yProps(index)}
+              innerRef={ref}
+              {...props}
+            />
+          ));
+
+          return (
+            <CustomTab
+              key={product.name}
+            />
+          );
+        })}
       </Tabs>
 
       <br />
@@ -68,7 +87,7 @@ const RelatedProduct = ({ relatedProductList }) =>
 };
 
 RelatedProduct.propTypes = {
-  relatedProductList: PropTypes.arrayOf(PropTypes.exact({
+  relatedProductList: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string,
     price: PropTypes.number,
     numberSold: PropTypes.number,

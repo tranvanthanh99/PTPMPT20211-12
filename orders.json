@@ -1,0 +1,351 @@
+[{
+  "_id": {
+    "$oid": "60b907019476b01303d501cd"
+  },
+  "ownerId": "606d3cb771e98c778aecacc6",
+  "productName": "Jordan 1 Retro High Pine Green Black",
+  "productId": "6073c30884658c55e8ab4713",
+  "urlKey": "air-jordan-1-retro-high-pine-green-black",
+  "purchaseDate": {
+    "$date": "2020-02-29T00:00:00Z"
+  },
+  "price": 110,
+  "status": "Processing",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60b907529476b01303d501ce"
+  },
+  "ownerId": "606d3cb771e98c778aecacc6",
+  "productName": "Jordan 5 Retro Fire Red Silver Tongue (2020)",
+  "productId": "6073c30884658c55e8ab47b4",
+  "urlKey": "air-jordan-5-retro-fire-red-silver-tongue-2020",
+  "purchaseDate": {
+    "$date": "2020-03-01T00:00:00Z"
+  },
+  "price": 210,
+  "status": "Processing",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60b90d069476b01303d501cf"
+  },
+  "ownerId": "606d3cb771e98c778aecacc6",
+  "productId": "6073c30884658c55e8ab47b4",
+  "productName": "Jordan 5 Retro Fire Red Silver Tongue (2020)",
+  "urlKey": "air-jordan-5-retro-fire-red-silver-tongue-2020",
+  "purchaseDate": {
+    "$date": "2021-06-03T17:10:29.983Z"
+  },
+  "price": 210,
+  "status": "Processing",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60b90d9f9476b01303d501d0"
+  },
+  "ownerId": "606d3cb771e98c778aecacc6",
+  "productId": "6073c3a759777779b48a5ca7",
+  "productName": "Jordan 1 Retro High Gold Top 3",
+  "urlKey": "air-jordan-1-retro-high-gold-top-3",
+  "purchaseDate": {
+    "$date": "2021-06-03T17:13:03.690Z"
+  },
+  "price": 170,
+  "status": "Processing",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60b91ec6ce8b93c4917cd3b2"
+  },
+  "ownerId": "60891fb4076efe309ca6b873",
+  "productId": "6073c3a759777779b48a5ca7",
+  "productName": "Jordan 1 Retro High Gold Top 3",
+  "urlKey": "air-jordan-1-retro-high-gold-top-3",
+  "purchaseDate": {
+    "$date": "2021-06-03T18:26:14.713Z"
+  },
+  "price": 170,
+  "status": "Processing",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60b927edce8b93c4917cd3b3"
+  },
+  "ownerId": "60891fb4076efe309ca6b873",
+  "productId": "6073c33f1ad4ca1b7cc05779",
+  "productName": "Jordan 5 Retro Raging Bulls Red 2021 (GS)",
+  "urlKey": "air-jordan-5-retro-raging-bulls-red-2021-gs",
+  "purchaseDate": {
+    "$date": "2021-06-03T19:05:17.503Z"
+  },
+  "price": 150,
+  "status": "Processing",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60b9814f9476b01303d501d1"
+  },
+  "ownerId": "606d3cb771e98c778aecacc6",
+  "productId": "6073c33f1ad4ca1b7cc05779",
+  "productName": "Jordan 5 Retro Raging Bulls Red 2021 (GS)",
+  "urlKey": "air-jordan-5-retro-raging-bulls-red-2021-gs",
+  "purchaseDate": {
+    "$date": "2021-06-04T01:26:39.697Z"
+  },
+  "price": 150,
+  "status": "Processing",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c6cfa6d1ef1f54b4ad1f88"
+  },
+  "ownerId": "606d3cb771e98c778aecacc6",
+  "productId": "6073c35c6cf1d64308ba2e91",
+  "productName": "Jordan 5 Retro Raging Bulls Red 2021 (PS)",
+  "urlKey": "air-jordan-5-retro-raging-bulls-red-2021-ps",
+  "purchaseDate": {
+    "$date": "2021-06-14T03:40:22.056Z"
+  },
+  "price": 90,
+  "status": "Processing",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c81fcbe979eb4839df2c9c"
+  },
+  "ownerId": "60891fb4076efe309ca6b873",
+  "productId": "6073c30784658c55e8ab46a0",
+  "productName": "adidas Yeezy Boost 350 V2 Carbon",
+  "urlKey": "adidas-yeezy-boost-350-v2-carbon",
+  "purchaseDate": {
+    "$date": "2021-06-15T03:34:35.357Z"
+  },
+  "price": 230,
+  "status": "Processing",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c82023e979eb4839df2c9d"
+  },
+  "ownerId": "60891fb4076efe309ca6b873",
+  "productId": "6073c30784658c55e8ab46a0",
+  "productName": "adidas Yeezy Boost 350 V2 Carbon",
+  "urlKey": "adidas-yeezy-boost-350-v2-carbon",
+  "purchaseDate": {
+    "$date": "2021-06-15T03:36:03.684Z"
+  },
+  "price": 230,
+  "status": "Processing",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c82900e8785452e14466c6"
+  },
+  "ownerId": "60891fb4076efe309ca6b873",
+  "productId": "6073c30784658c55e8ab4688",
+  "productName": "adidas Yeezy Boost 350 V2 Black Red (2017/2020)",
+  "urlKey": "adidas-yeezy-boost-350-v2-core-black-red-2017",
+  "purchaseDate": {
+    "$date": "2021-06-15T04:13:52.286Z"
+  },
+  "price": 230,
+  "status": "Processing",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c8295be8785452e14466c7"
+  },
+  "ownerId": "60891fb4076efe309ca6b873",
+  "productId": "6073c3a759777779b48a5ca7",
+  "productName": "Jordan 1 Retro High Gold Top 3",
+  "urlKey": "air-jordan-1-retro-high-gold-top-3",
+  "purchaseDate": {
+    "$date": "2021-06-15T04:15:23.171Z"
+  },
+  "price": 170,
+  "status": "Processing",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60cbe2e6e71b924718fd65a3"
+  },
+  "ownerId": "60cbe2d0e71b924718fd65a2",
+  "productId": "6073c30884658c55e8ab4758",
+  "productName": "Nike Air Max 90 Infrared (2020)",
+  "urlKey": "nike-air-max-90-infrared-2020",
+  "purchaseDate": {
+    "$date": "2021-06-18T00:03:50.298Z"
+  },
+  "price": 150,
+  "status": "Processing",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60cbea6de71b924718fd65a8"
+  },
+  "ownerId": "60cbe6d2e71b924718fd65a6",
+  "productId": "6073c33f1ad4ca1b7cc05779",
+  "productName": "Jordan 5 Retro Raging Bulls Red 2021 (GS)",
+  "urlKey": "air-jordan-5-retro-raging-bulls-red-2021-gs",
+  "purchaseDate": {
+    "$date": "2021-06-18T00:35:57.567Z"
+  },
+  "price": 150,
+  "status": "Processing",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60cbea9ce71b924718fd65a9"
+  },
+  "ownerId": "60cbe6d2e71b924718fd65a6",
+  "productId": "6073c37adcc96b77fcddd194",
+  "productName": "Jordan 5 Retro Raging Bulls Red 2021 (TD)",
+  "urlKey": "air-jordan-5-retro-raging-bulls-red-2021-td",
+  "purchaseDate": {
+    "$date": "2021-06-18T00:36:44.171Z"
+  },
+  "price": 70,
+  "status": "Processing",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60cc0a1fb51a594b6d602e44"
+  },
+  "ownerId": "60cbe6d2e71b924718fd65a6",
+  "productId": "6073c30884658c55e8ab4758",
+  "productName": "Nike Air Max 90 Infrared (2020)",
+  "urlKey": "nike-air-max-90-infrared-2020",
+  "purchaseDate": {
+    "$date": "2021-06-18T02:51:11.684Z"
+  },
+  "price": 150,
+  "status": "Processing",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ddc556ec902b4f26267cf1"
+  },
+  "ownerId": "60cbe590e71b924718fd65a4",
+  "productId": "6073c30784658c55e8ab46b7",
+  "productName": "Nike Air Force 1 Low Supreme Black",
+  "urlKey": "nike-air-force-1-low-supreme-box-logo-black",
+  "purchaseDate": {
+    "$date": "2021-07-01T13:38:30.789Z"
+  },
+  "price": 106,
+  "status": "Processing",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60edad31720220544a6c1dba"
+  },
+  "ownerId": "60cbe590e71b924718fd65a4",
+  "productId": "6073c3307e5be73ee0e27d9d",
+  "productName": "Jordan 1 Retro High Satin Black Toe (W)",
+  "urlKey": "air-jordan-1-retro-high-satin-black-toe-w",
+  "purchaseDate": {
+    "$date": "2021-07-13T15:11:45.829Z"
+  },
+  "price": 170,
+  "status": "Processing",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60f5980e3b55c6c15ca0be86"
+  },
+  "ownerId": "60f597473b55c6c15ca0be85",
+  "productId": "6073c35c6cf1d64308ba2e91",
+  "productName": "Jordan 5 Retro Raging Bulls Red 2021 (PS)",
+  "urlKey": "air-jordan-5-retro-raging-bulls-red-2021-ps",
+  "purchaseDate": {
+    "$date": "2021-07-19T15:19:41.979Z"
+  },
+  "price": 90,
+  "status": "Processing",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60f598263b55c6c15ca0be87"
+  },
+  "ownerId": "60f597473b55c6c15ca0be85",
+  "productId": "6073c35c6cf1d64308ba2e91",
+  "productName": "Jordan 5 Retro Raging Bulls Red 2021 (PS)",
+  "urlKey": "air-jordan-5-retro-raging-bulls-red-2021-ps",
+  "purchaseDate": {
+    "$date": "2021-07-19T15:20:06.632Z"
+  },
+  "price": 90,
+  "status": "Processing",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60fae331904086626c02c26c"
+  },
+  "ownerId": "60f597473b55c6c15ca0be85",
+  "productId": "6073c30784658c55e8ab46a0",
+  "productName": "adidas Yeezy Boost 350 V2 Carbon",
+  "urlKey": "adidas-yeezy-boost-350-v2-carbon",
+  "purchaseDate": {
+    "$date": "2021-07-23T15:41:37.779Z"
+  },
+  "price": 230,
+  "status": "Processing",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "612fb65e3768288250bb16a0"
+  },
+  "ownerId": "60cbe6d2e71b924718fd65a6",
+  "productId": "6073c30884658c55e8ab483e",
+  "productName": "Jordan 1 Retro High Fearless UNC Chicago",
+  "urlKey": "air-jordan-1-retro-high-fearless-unc-chicago",
+  "purchaseDate": {
+    "$date": "2021-09-01T17:20:30.210Z"
+  },
+  "price": 170,
+  "status": "Processing",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c205cf16689d390d695425"
+  },
+  "ownerId": "60cbe6d2e71b924718fd65a6",
+  "productId": "6073c30784658c55e8ab4688",
+  "productName": "adidas Yeezy Boost 350 V2 Black Red (2017/2020)",
+  "urlKey": "adidas-yeezy-boost-350-v2-core-black-red-2017",
+  "purchaseDate": {
+    "$date": "2021-12-21T16:50:23.811Z"
+  },
+  "price": 230,
+  "status": "Processing",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c32e927830bf5be0779a59"
+  },
+  "ownerId": "60cbe6d2e71b924718fd65a6",
+  "productId": "6073c30884658c55e8ab4713",
+  "productName": "Jordan 1 Retro High Pine Green Black",
+  "urlKey": "air-jordan-1-retro-high-pine-green-black",
+  "purchaseDate": {
+    "$date": "2021-12-22T13:56:34.829Z"
+  },
+  "price": 180,
+  "status": "Processing",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61cd5ec38df51a4df4c5cffe"
+  },
+  "ownerId": "61cd5e908df51a4df4c5cffd",
+  "productId": "6073c37adcc96b77fcddd194",
+  "productName": "Jordan 5 Retro Raging Bulls Red 2021 (TD)",
+  "urlKey": "air-jordan-5-retro-raging-bulls-red-2021-td",
+  "purchaseDate": {
+    "$date": "2021-12-30T07:24:50.989Z"
+  },
+  "price": 70,
+  "status": "Processing",
+  "__v": 0
+}]

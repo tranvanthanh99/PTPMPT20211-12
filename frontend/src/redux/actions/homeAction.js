@@ -22,23 +22,36 @@ const FetchProductsRequestFailure = (error) => ({
   payload: error,
 });
 
-export const FetchProducts = () => {
-  return async function (dispatch) {
+export const FetchProducts = () =>
+{
+  return async function (dispatch)
+  {
     dispatch(FetchProductsRequest());
-    try {
+    try
+    {
       const resMostPopular = await axios.get(`${backEndLink}/api/product/browse?limit=4&sort=most-popular`);
       const resTrending = await axios.get(`${backEndLink}/api/product/browse?limit=4&sort=trending`);
-      if (resMostPopular.status === 200 && resTrending.status === 200) {
+      const latestBuy = await axios.get(`${backEndLink}/api/product/browse?limit=4&tags=yeezy`);
+      const latestProduct = await axios.get(`${backEndLink}/api/product/browse?limit=4&tags=jordan`);
+
+      if (resMostPopular.status === 200 && resTrending.status === 200)
+      {
         const respondData = {
           mostPopular: resMostPopular.data.result,
           trending: resTrending.data.result,
+          latestBuy: latestBuy.data.result,
+          latestProduct: latestProduct.data.result,
         };
         dispatch(FetchProductsRequestSuccess(respondData));
-      } else {
+      }
+      else
+      {
         //   throw new Error("Cannot Sign In", res.data.error);
         dispatch(FetchProductsRequestFailure(resMostPopular));
       }
-    } catch (error) {
+    }
+    catch (error)
+    {
       dispatch(FetchProductsRequestFailure(error));
     }
   };
