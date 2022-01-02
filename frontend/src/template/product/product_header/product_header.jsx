@@ -2,6 +2,7 @@ import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import * as PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { Link } from 'react-router-dom';
 import { Paper } from '@material-ui/core';
 import { useTheme } from '@material-ui/styles';
 import CustomTypography from '../../../components/Typography/typography';
@@ -18,6 +19,7 @@ const ProductHeader = ({
   productName,
   sizeQuantity,
   price,
+  urlKey,
 }) =>
 {
   const classes = productHeaderStyle();
@@ -55,9 +57,6 @@ const ProductHeader = ({
       <div className={classes.routes_breadcrumbs_container}>
         {/* Product route */}
         <RouteBreadcrumbs data={routes} />
-
-        {/* TODO Social buttons */}
-
       </div>
 
       {/*  Product name */}
@@ -146,14 +145,15 @@ const ProductHeader = ({
               }
             }
             buttonSize="btn--large"
+            disabled={currentSize === 'All'}
           >
             <div className={classes.inner}>
-              <a
+              <Link
                 style={{
                   color: 'inherit',
                   textDecoration: 'inherit',
                 }}
-                href="/buy/air-jordan-1-retro-high-bio-hack"
+                to={`/buy/${urlKey}?size=${currentSize}`}
               >
                 <CustomTypography
                   txtType="text--light"
@@ -186,7 +186,7 @@ const ProductHeader = ({
                 >
                   Buy
                 </CustomTypography>
-              </a>
+              </Link>
             </div>
           </CustomButton>
         </div>
@@ -204,6 +204,7 @@ ProductHeader.propTypes = {
     size: PropTypes.string,
     quantity: PropTypes.number,
   })).isRequired,
+  urlKey: PropTypes.string.isRequired,
 };
 
 export default ProductHeader;

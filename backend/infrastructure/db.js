@@ -3,7 +3,8 @@ var mongoose = require("mongoose");
 
 
 const db = {
-    url : `mongodb+srv://${process.env.DB_HOST}:${process.env.DB_KEY}${process.env.DB_PORT}/${process.env.DB_NAME}?retryWrites=true&w=majority`,
+    // url : `mongodb+srv://${process.env.DB_HOST}:${process.env.DB_KEY}${process.env.DB_PORT}/${process.env.DB_NAME}?retryWrites=true&w=majority`,
+    url: 'mongodb://mongodb:27017/PROJECTX',
     option : {
         useNewUrlParser : true,
         useUnifiedTopology: true

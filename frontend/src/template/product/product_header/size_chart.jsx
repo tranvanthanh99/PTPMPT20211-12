@@ -12,7 +12,6 @@ import {
 } from '@material-ui/core';
 import CustomTypography from '../../../components/Typography/typography';
 import productHeaderStyle from './product_header.style';
-import { makeKey } from '../../../utils/supportFunction';
 
 const chunkArray = (myArray, chunkSize) =>
 {
@@ -86,7 +85,7 @@ const SizeChart = ({
     <>
       <div className={classes.size_chart_header}>
 
-        {/* TODO Back button */}
+        {/* Back button */}
         <CustomTypography
           onClick={backButtonOnClick}
           txtType="text--bold"
@@ -104,7 +103,7 @@ const SizeChart = ({
           &lt; Back
         </CustomTypography>
 
-        {/* TODO Header */}
+        {/* Header */}
         <CustomTypography
           txtType="text--bold"
           style={
@@ -120,7 +119,7 @@ const SizeChart = ({
 
       </div>
 
-      {/* TODO  Size chart table */}
+      {/* Size chart table */}
       <TableContainer style={{
         height: '346px',
         width: '343px',
@@ -140,11 +139,11 @@ const SizeChart = ({
             {rows.map((row) =>
             {
               const [us, uk, eu, cm, w] = row;
-              const highlighted = currentSize === eu;
+              const highlighted = currentSize === us;
 
               return (
                 <StyledTableRow
-                  key={makeKey(10)}
+                  key={eu}
                   style={{ background: highlighted ? '#eef7eb' : null }}
                 >
                   <StyledTableCell align="center">{us}</StyledTableCell>
