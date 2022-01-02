@@ -42,3 +42,4 @@ Repo bài tập lớn môn phát triển phần mềm phân tán
 ### chạy câu lệnh sau để hoàn thành chạy compose container theo setup ở trên: 
 
 ### - docker-compose up
+Ta sẽ thấy có 3 docker image được khởi tạo lần lượt là frontend, backend, mongodb. Frontend được map từ cổng 80 ra ngoài cổng 3000, backend được giữ nguyên từ cổng 5000, database mongodb được giữ nguyên từ cổng 27017
