@@ -40,6 +40,12 @@ Repo bài tập lớn môn phát triển phần mềm phân tán
 
 
 ### chạy câu lệnh sau để hoàn thành chạy compose container theo setup ở trên: 
+```
+docker-compose up
+```
+* Mở trình duyệt và đi tới địa chỉ 
+```
+localhost:3000
+```
 
-### - docker-compose up
-Ta sẽ thấy có 3 docker image được khởi tạo lần lượt là frontend, backend, mongodb. Frontend được map từ cổng 80 ra ngoài cổng 3000, backend được giữ nguyên từ cổng 5000, database mongodb được giữ nguyên từ cổng 27017
+Ta sẽ thấy có 3 docker image được khởi tạo lần lượt là frontend, backend, mongodb. Frontend được map từ cổng 80 ra ngoài cổng 3000, backend được giữ nguyên từ cổng 5000, database mongodb được giữ nguyên từ cổng 27017. Chú ý, có thể dùng mongo Atlas đã được setup sẵn bằng cách sử dụnng url đã được comment sẵn ở trên trong backend/infrastructure/db.js, có thể thay thế bằng database mong muốn tương ứng.
