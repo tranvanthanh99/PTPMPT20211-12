@@ -8,12 +8,6 @@ Các chức năng:
 - Xem sản phẩm tổng quan
 - Filter, search theo sản phẩm, tag, nhóm, công ty 
 - Mua, kiểm soát thông tin đơn hảng
-Các công nghệ sử dụng:
-- React JS
-- NodeJS Express JS
-- Redis caching
-- MongoDB
-- Docker
 
 Thành phần chính trong ứng dụng:
 - service app: FrontEnd: ReactJS, Backend: ExpressJS
@@ -22,7 +16,7 @@ Thành phần chính trong ứng dụng:
 
 Hệ thống có đầy đủ chức năng đăng nhâp, đăng xuất, truy suất, đọc dữ liệu từ các đơn hàng và xử lý thông tin, kiểm soát quyền. 
 
-## Hướng dẫn setup docker theo docker file
+## Tổng quan về công nghệ sử dụng và hướng dẫn setup docker theo docker file
 ### Cấu trúc project:
   1. Front-end (JavaScript):
   - Sử dụng ReactJS làm framework cho lập trình UI/UX
