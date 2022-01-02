@@ -39,11 +39,11 @@ Repo bài tập lớn môn phát triển phần mềm phân tán
 - Chú ý các tham số: images, port, environment, link phục vụ lần lượt cho việc đặt tên image, mapping các cổng đầu ra từ trong image ra ngoài, enviroment phục vụ develop hay production và link cho phép image kết nối trong nội tại.
 
 
-### chạy câu lệnh sau để hoàn thành chạy compose container theo setup ở trên: 
+### Chạy câu lệnh sau để hoàn thành chạy compose container theo setup ở trên: 
 ```
 docker-compose up
 ```
-* Mở trình duyệt và đi tới địa chỉ 
+Mở trình duyệt và đi tới địa chỉ 
 ```
 localhost:3000
 ```
